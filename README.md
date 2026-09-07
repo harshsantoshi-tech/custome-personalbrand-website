@@ -1,16 +1,46 @@
-# React + Vite
+# Elena Marsh — Business Strategy Consulting
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page portfolio and booking site for a business strategy consultant, built with React and Vite. Features an editorial-style design system, a case studies gallery, and a fully custom (front-end only) session booking flow — no third-party scheduling tool required.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Light/dark theme toggle** — every color in the site is driven by CSS custom properties, so the whole page re-themes instantly
+- **Case studies gallery** — a self-balancing masonry-style layout with industry filters (Retail, Fintech, Manufacturing, Healthcare)
+- **Custom booking picker** — a Calendly-style date and time selector built from scratch, matched to the site's visual language
+- **Responsive design** — down to mobile, with visible keyboard focus states and reduced-motion support
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev)
+- [Vite](https://vitejs.dev) — build tool and dev server
+- Plain CSS with custom properties (no CSS framework)
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repo and install dependencies:
+
+```bash
+git clone <your-repo-url>
+cd elena-marsh-consulting
+npm install
+```
+
+Start the local dev server:
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`.
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
