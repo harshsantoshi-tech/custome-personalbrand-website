@@ -1,0 +1,71 @@
+.about {
+  padding: 120px 48px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-image-wrap { position: relative; }
+
+.about-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.about-caption {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--stone);
+}
+
+.about-content { padding-top: 12px; }
+
+.about-label {
+  font-size: 14px;
+  color: var(--moss);
+  margin: 0 0 18px 0;
+}
+
+.about-heading {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  font-weight: 500;
+  max-width: 14ch;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 56ch;
+  margin: 0 0 20px 0;
+  opacity: 0.88;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--sand);
+}
+
+.about-stat-num {
+  font-size: 32px;
+  margin: 0;
+}
+
+.about-stat-label {
+  font-size: 13px;
+  color: var(--stone);
+  margin: 4px 0 0 0;
+}
+
+@media (max-width: 860px) {
+  .about { grid-template-columns: 1fr; padding: 72px 20px; gap: 32px; }
+  .about-stats { gap: 28px; flex-wrap: wrap; }
+}

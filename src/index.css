@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+html[data-theme='light'] {
+  --paper: #F6F3EC;
+  --paper-dim: #EFEBE1;
+  --ink: #211F1B;
+  --moss: #46523C;
+  --moss-dark: #333C2B;
+  --sand: #C9BFA8;
+  --stone: #8C8577;
+  --overlay-strong: rgba(33, 31, 27, 0.55);
+}
+
+html[data-theme='dark'] {
+  --paper: #1B1A17;
+  --paper-dim: #242219;
+  --ink: #EDE8DD;
+  --moss: #8FA377;
+  --moss-dark: #6E8259;
+  --sand: #4A4638;
+  --stone: #A79E8E;
+  --overlay-strong: rgba(0, 0, 0, 0.6);
+}
+:root {
+  --panel-ink: #211F1B;
+  --panel-paper: #F6F3EC;
+  --panel-moss-light: #8FA377;
+  --scrim: rgba(20, 18, 15, 0.75);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.display {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--moss);
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
